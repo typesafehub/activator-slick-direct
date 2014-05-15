@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Slick Direct Embedding - Activator Template</title>
+</head>
+<body>
+
+<div>
+    <h2>Introduction</h2>
+    
+    <p>This tutorial shows you how to use Slick's experimental <em>Direct Embedding</em> query API.</p>
+
+    <p>The <em>Direct Embedding</em> requires access to the Scala compiler at runtime. It is declared as an optional dependency in Slick's POM file, so it won't be pulled in automatically when you add a dependency to Slick to your build. You need to add the Scala compiler explicitly, as done in this project's <a href="#code/build.sbt" class="shortcut">build.sbt</a> file:</p>
+
+    <code><pre>libraryDependencies +=
+  "org.scala-lang" % "scala-compiler" %
+  scalaVersion.value</pre></code>
+
+    <p>The sample app can be found in <a href="#code/src/main/scala/SimpleExample.scala" class="shortcut">SimpleExample.scala</a>. This application automatically runs when Activator is started and then re-runs after every successful compile.  You can see the output in <a href="#run" class="shortcut">Run</a>.</p>
+</div>
+
+<div>
+    <h2>Next Steps</h2>
+
+    <p>Check out the full <a href="http://slick.typesafe.com/doc/2.0.2/" target="_blank">Slick manual and API docs</a>.</p>
+
+    <p>You can also find more Slick templates, contributed by both, the Slick team and the community, <a href="/home" class="shortcut">here in Activator</a>.</p>
+</div>
+
+</body>
+</html>
